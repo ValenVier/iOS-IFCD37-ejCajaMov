@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JXf-Cj-DJO">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cajas-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Cajas" id="BYZ-38-t0r" customClass="cajaFijaViewController" customModule="ejCajaMov" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-tF-J6o">
+                                <rect key="frame" x="181" y="825" width="112" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37819188570000001" green="0.44293713220000003" blue="0.7576935279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Izquierda">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="izquierda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGf-Bb-cJW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ7-fy-5sh">
+                                <rect key="frame" x="294" y="740" width="112" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37819188570000001" green="0.44293713220000003" blue="0.7576935279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Arriba">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="arriba:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhA-7j-Thn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jld-pT-qQ2">
+                                <rect key="frame" x="408" y="825" width="112" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37819188570000001" green="0.44293713220000003" blue="0.7576935279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Derecha">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="derecha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ac-aa-i6J"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msy-mi-SpY" userLabel="cajaFija">
+                                <rect key="frame" x="50" y="100" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-32-rfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                        <color key="backgroundColor" red="0.47870399746192893" green="0.064745615409987828" blue="0.45821717020299702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="5ts-mU-DcD"/>
+                                    <constraint firstAttribute="bottom" secondItem="qnF-32-rfx" secondAttribute="bottom" constant="60" id="Lfs-kZ-wSJ"/>
+                                    <constraint firstItem="qnF-32-rfx" firstAttribute="leading" secondItem="msy-mi-SpY" secondAttribute="leading" id="Zvw-iw-VEk"/>
+                                    <constraint firstAttribute="trailing" secondItem="qnF-32-rfx" secondAttribute="trailing" constant="60" id="a0U-81-4ZO"/>
+                                    <constraint firstAttribute="width" constant="600" id="hym-j3-swq"/>
+                                    <constraint firstItem="qnF-32-rfx" firstAttribute="top" secondItem="msy-mi-SpY" secondAttribute="top" id="roU-Kl-tDS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8i6-HI-AjS" userLabel="cajaMovimiento">
+                                <rect key="frame" x="50" y="640" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="254-ny-ivL"/>
+                                    <constraint firstAttribute="width" constant="60" id="HcI-C0-Xbi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8d-PS-45K" userLabel="Display">
+                                <rect key="frame" x="710" y="100" width="80" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-5l-dRs">
+                                        <rect key="frame" x="8" y="8" width="64" height="584"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Edh-5l-dRs" firstAttribute="leading" secondItem="D8d-PS-45K" secondAttribute="leading" constant="8" id="3Po-Dx-LyD"/>
+                                    <constraint firstItem="Edh-5l-dRs" firstAttribute="top" secondItem="D8d-PS-45K" secondAttribute="top" constant="8" id="LTR-Ed-HDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Edh-5l-dRs" secondAttribute="trailing" constant="8" id="U3Z-O5-Il4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Edh-5l-dRs" secondAttribute="bottom" constant="8" id="cmw-eL-32g"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re7-xS-q8l">
+                                <rect key="frame" x="294" y="914" width="112" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37819188570000001" green="0.44293713220000003" blue="0.7576935279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Abajo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="abajo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8L9-jJ-9gB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D8d-PS-45K" secondAttribute="bottom" constant="380" id="61o-Gt-Uyy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D8d-PS-45K" secondAttribute="trailing" constant="20" id="9xG-mQ-A1S"/>
+                            <constraint firstItem="8i6-HI-AjS" firstAttribute="leading" secondItem="msy-mi-SpY" secondAttribute="leading" id="Rd3-BT-tM0"/>
+                            <constraint firstItem="8i6-HI-AjS" firstAttribute="bottom" secondItem="msy-mi-SpY" secondAttribute="bottom" id="TPO-pl-8WM"/>
+                            <constraint firstItem="D8d-PS-45K" firstAttribute="leading" secondItem="msy-mi-SpY" secondAttribute="trailing" constant="60" id="lMo-ig-0Pw"/>
+                            <constraint firstItem="msy-mi-SpY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="mCg-6K-xP1"/>
+                            <constraint firstItem="D8d-PS-45K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="n6f-EF-65D"/>
+                            <constraint firstItem="msy-mi-SpY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="oit-Tq-87g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cajas con movimiento" id="veS-pi-4hp"/>
+                    <connections>
+                        <outlet property="bottom" destination="TPO-pl-8WM" id="qbv-ju-gPT"/>
+                        <outlet property="height" destination="254-ny-ivL" id="4IV-Ku-bDo"/>
+                        <outlet property="labelDisplay" destination="Edh-5l-dRs" id="wMg-z9-9Zk"/>
+                        <outlet property="leading" destination="Rd3-BT-tM0" id="TSl-Dg-VyG"/>
+                        <outlet property="width" destination="HcI-C0-Xbi" id="B1d-Cg-Zfm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049.6296296296296" y="119.44444444444444"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yBQ-vb-sRs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JXf-Cj-DJO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NKg-M7-HTg">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Wb-WZ-sks"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZL-ho-2n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
